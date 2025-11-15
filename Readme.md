@@ -197,13 +197,7 @@ assignment-one-dart-samnoon_ahmed_2022135/
 - Run tests individually.
 - Analyze code: `dart analyze`
 
----
 
-## 🎯 Good Luck!
-
-আপনার Dart assignment এখন সম্পূর্ণ। Test pass স্ক্রিনশট এবং Repo সাবমিট করলেই কাজ শেষ!
-
-*You've got this! 🚀*
 
 ---
 
