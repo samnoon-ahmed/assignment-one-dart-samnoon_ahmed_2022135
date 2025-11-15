@@ -150,7 +150,7 @@ dart test --reporter=expanded
 ## 📁 Required File Structure
 
 
-assignment-one-dart-YOUR_NAME-YOUR_IUB_ID/
+assignment-one-dart-samnoon_ahmed_2022135/
 ├── question1.dart
 ├── question2.dart
 ├── question3.dart
