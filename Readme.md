@@ -35,8 +35,8 @@ This assignment tests your understanding of Dart programming concepts. The quest
 
 2. **Clone Your Forked Repository:**
 
-git clone https://github.com/YOUR_USERNAME/assignment-one-dart-YOUR_NAME-YOUR_IUB_ID.git
-cd assignment-one-dart-YOUR_NAME-YOUR_IU
+git clone https://github.com/samnoon-ahmed/assignment-one-dart-samnoon_ahmed_2022135.git
+cd assignment-one-dart-samnoon_ahmed_2022135
 
 
 ### Step 3: Set Up Your Development Environment
