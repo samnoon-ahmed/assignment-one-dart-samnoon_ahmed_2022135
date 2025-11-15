@@ -1,6 +1,3 @@
-// Question 1: Basic Data Types & Functions
-
-// Function: calculateBMI
 double calculateBMI(double weight, double height) {
   if (height == 0) {
     throw ArgumentError('Height cannot be zero');
@@ -8,7 +5,6 @@ double calculateBMI(double weight, double height) {
   return weight / (height * height);
 }
 
-// Function: getGrade
 String getGrade(int score) {
   if (score >= 90 && score <= 100) {
     return 'A';
@@ -23,7 +19,6 @@ String getGrade(int score) {
   }
 }
 
-// Optional demo function (tests generally call functions directly)
 void main() {
   String name = 'John Doe';
   int age = 25;
@@ -31,10 +26,8 @@ void main() {
   bool isStudent = true;
 
   print('Name: $name, Age: $age, Height: $height, Is Student: $isStudent');
-
   double bmi = calculateBMI(70, 1.76);
   print('BMI: ${bmi.toStringAsFixed(1)}');
-
   int score = 85;
   print('Grade: ${getGrade(score)}');
 }

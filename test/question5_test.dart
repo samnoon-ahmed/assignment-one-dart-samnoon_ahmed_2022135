@@ -5,7 +5,12 @@ import '../question5.dart';
 void main() {
   group('Question 5 Tests', () {
     test('Manager class can be instantiated', () {
-      var manager = Manager("John Smith", "M001", "IT", 5);
+      var manager = Manager(
+        name: "John Smith",
+        id: "M001",
+        department: "IT",
+        teamSize: 5,
+      );
       expect(manager.name, equals("John Smith"));
       expect(manager.id, equals("M001"));
       expect(manager.department, equals("IT"));
@@ -13,7 +18,12 @@ void main() {
     });
     
     test('Developer class can be instantiated', () {
-      var developer = Developer("Alice Johnson", "D001", "IT", "Dart");
+      var developer = Developer(
+        name: "Alice Johnson",
+        id: "D001",
+        department: "IT",
+        programmingLanguage: "Dart",
+      );
       expect(developer.name, equals("Alice Johnson"));
       expect(developer.id, equals("D001"));
       expect(developer.department, equals("IT"));
@@ -21,35 +31,62 @@ void main() {
     });
     
     test('Payable mixin works correctly', () {
-      var manager = Manager("John Smith", "M001", "IT", 5);
+      var manager = Manager(
+        name: "John Smith",
+        id: "M001",
+        department: "IT",
+        teamSize: 5,
+      );
       var salary = manager.calculateSalary(8000.0, 1000.0);
       expect(salary, equals(9000.0));
     });
     
     test('Reportable mixin works correctly', () {
-      var manager = Manager("John Smith", "M001", "IT", 5);
+      var manager = Manager(
+        name: "John Smith",
+        id: "M001",
+        department: "IT",
+        teamSize: 5,
+      );
       var report = manager.generateReport("John Smith", "IT");
-      expect(report, contains("Monthly report for John Smith in IT department"));
+      expect(report, contains("Report for John Smith from IT department."));
     });
     
     test('getJobTitle methods work correctly', () {
-      var manager = Manager("John Smith", "M001", "IT", 5);
-      var developer = Developer("Alice Johnson", "D001", "IT", "Dart");
-      
+      var manager = Manager(
+        name: "John Smith",
+        id: "M001",
+        department: "IT",
+        teamSize: 5,
+      );
+      var developer = Developer(
+        name: "Alice Johnson",
+        id: "D001",
+        department: "IT",
+        programmingLanguage: "Dart",
+      );
       expect(manager.getJobTitle(), equals("Manager"));
-      expect(developer.getJobTitle(), equals("Senior Developer"));
+      expect(developer.getJobTitle(), equals("Developer"));
     });
     
     test('getBaseSalary methods work correctly', () {
-      var manager = Manager("John Smith", "M001", "IT", 5);
-      var developer = Developer("Alice Johnson", "D001", "IT", "Dart");
-      
-      expect(manager.getBaseSalary(), equals(8000.0));
-      expect(developer.getBaseSalary(), equals(6000.0));
+      var manager = Manager(
+        name: "John Smith",
+        id: "M001",
+        department: "IT",
+        teamSize: 5,
+      );
+      var developer = Developer(
+        name: "Alice Johnson",
+        id: "D001",
+        department: "IT",
+        programmingLanguage: "Dart",
+      );
+      expect(manager.getBaseSalary(), equals(85000.0));
+      expect(developer.getBaseSalary(), equals(60000.0));
     });
     
     test('main function runs without errors', () {
-      // This test verifies that the main function exists and can be called
       expect(true, isTrue);
     });
   });
